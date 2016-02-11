@@ -3,45 +3,49 @@
     height: 100%;
 }
 
-#footer, #main-content {
+#footer {
     outline: 1px solid #ddd;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /********************* Layout ******************/
 
-@media (min-width: 1040px) {
-    #header {
-        height: 150px;
-    }
+#header {
+    height: 150px;
+}
 
-    #container {
-        margin: 0 auto;
-        max-width: 980px;
-        height: calc(100% - 260px);
-    }
+#container {
+    margin: 0 auto;
+    max-width: 980px;
+    height: calc(100% - 260px);
+}
 
-    #container:after {
-        content: '';
-        display: block;
-        clear: both;
-    }
+#container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
 
-    #snb, #main-content, #aside {
-        float: left;
-        height: 100%;
-    }
+#snb, #main-content, #aside {
+    float: left;
+    height: 100%;
+}
 
-    #snb, #aside {
-        width: 180px;
-    }
+#snb, #aside {
+    width: 180px;
+}
 
-    #main-content {
-        width: calc(100% - 360px);
-    }
+#main-content {
+    width: calc(100% - 360px);
+}
 
-    #footer {
-        height: 110px;
-    }
+#footer {
+    height: 110px;
 }
 
 /**********************************************/
@@ -67,9 +71,6 @@
 }
 
 #header .lnb {
-    margin: 0;
-    padding: 0;
-    list-style: none;
     height: 100%;
     line-height: 50px;
 }
@@ -87,20 +88,11 @@
     padding: 0 5px;
 }
 
-#header .lnb a {
-    color: black;
-    text-decoration: none;
-}
-
-#header .lnb a:hover {
-    text-decoration: underline;
-}
-
 #header .brand {
     background-color: #EB4927;
 }
 
-#header .brand h1 {
+#header .branda h1 {
     height: 100%;
     display: inline-block;
     line-height: 100px;;
@@ -161,69 +153,51 @@
     margin: 0;
 }
 
-#snb .menu a {
-    color: black;
-    text-decoration: none;
-}
-
-#snb .menu a:hover {
-    text-decoration: underline;
-}
-
 /*************/
 
-/*aside*/
+/*#main-content*/
 
-#aside .top {
-    border-top: 2px solid #666;
-    border-bottom: 2px solid #666;
+#main-content {
+    padding: 20px;
 }
 
-#aside .top ul {
+#main-content .attention {
+    border: 1px solid #ddd;
+    background-color: #eee;
+    padding: 15px;
+}
+
+#main-content .attention h1 {
+    font-size: 18px;
+    color: #ff3c00;
+}
+
+#main-content .attention ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-#aside .top li {
-    display: block;
-    height: 40px;
-    line-height: 40px;
-    border-bottom: 1px solid #ddd;
-    padding: 0 10px;
-}
-
-#aside .top a {
+a {
     color: black;
     text-decoration: none;
 }
 
-#aside .top a:hover {
+a:hover {
     text-decoration: underline;
 }
 
-.icon {
-    display: inline-block;
-    background: url("../images/ico_task.png") no-repeat;
-    width: 25px;
-    height: 25px;
-    vertical-align: middle;
+#main-content .attention li {
+    height: 20px;
+    line-height: 20px;
 }
 
-.icon.tts {
-    background-position: -5px -90px;
+#main-content .attention .title {
+    font-weight: bold;
 }
 
-.icon.document {
-    background-position: -5px -30px;
+#main-content .attention .time {
+    float: right;
 }
 
-.icon.guide {
-    background-position: -5px 0;
-}
-
-.icon.bts {
-    background-position: -5px -120px;
-}
-
-/*******/
+/***************/
