@@ -3,10 +3,6 @@
     height: 100%;
 }
 
-#footer {
-    outline: 1px solid #ddd;
-}
-
 ul {
     list-style: none;
     margin: 0;
@@ -125,12 +121,6 @@ a:hover {
     border-bottom: 2px solid #666;
 }
 
-#snb .top ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
 #snb .top li {
     text-align: center;
     box-sizing: border-box;
@@ -158,12 +148,6 @@ a:hover {
 
 #snb .menu h1 {
     margin: 10px 0 5px 0;
-}
-
-#snb .menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
 /*************/
@@ -215,3 +199,18 @@ a:hover {
 }
 
 /***************/
+
+#footer .copyright {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.snb-list {
+    border-bottom: 1px solid #ddd;
+}
+
+.snb-list li {
+    height: 20px;
+}
