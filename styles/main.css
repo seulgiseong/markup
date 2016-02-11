@@ -3,10 +3,39 @@
     height: 100%;
 }
 
-#wrapper * {
+#header, #footer, #snb, #aside, #main-content {
     outline: 1px solid #ddd;
 }
 
+#header {
+    height: 150px;
+}
 
+#container {
+    margin: 0 auto;
+    max-width: 980px;
+    height: calc(100% - 260px);
+}
 
-/*#E93B1C*/
+#container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#snb, #main-content, #aside {
+    float: left;
+    height: 100%;
+}
+
+#snb, #aside {
+    width: 180px;
+}
+
+#main-content {
+    width: calc(100% - 360px);
+}
+
+#footer {
+    height: 110px;
+}
