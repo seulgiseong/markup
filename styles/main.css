@@ -3,6 +3,6 @@
     height: 100%;
 }
 
-#wrapper * {
+#header, #footer, #snb, #main-content, #aside {
     outline: 1px solid #ddd;
 }
