@@ -214,3 +214,43 @@ a:hover {
 .snb-list li {
     height: 20px;
 }
+
+#aside .top {
+    border-top: 2px solid #666;
+    border-bottom: 2px solid #666;
+}
+
+#aside .top li {
+    height: 40px;
+    line-height: 40px;
+}
+
+#aside .top li:not(:last-of-type) {
+    border-bottom: 1px solid #ddd;
+}
+
+#aside .top .icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 5px;
+    background: url("../images/sprite.png");
+}
+
+#aside .top .icon.tts {
+    background-position: 0 -90px;
+}
+
+#aside .top .icon.document {
+    background-position: 0 -30px;
+}
+
+#aside .top .icon.guide {
+    background-position: 0 0;
+}
+
+#aside .top .icon.bts {
+    background-position: 0 -120px;
+}
+
