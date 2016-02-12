@@ -28,7 +28,6 @@ a:hover {
     #container {
         margin: 0 auto;
         max-width: 980px;
-        height: calc(100% - 260px);
     }
 
     #container:after {
