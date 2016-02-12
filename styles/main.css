@@ -90,7 +90,14 @@ a:hover {
     display: inline-block;
     float: left;
     width: auto;
+}
+
+#header .lnb a {
     padding: 0 5px;
+}
+
+#header .lnb > li:not(:last-of-type) a {
+    border-right: 1px solid #ddd;
 }
 
 #header .brand {
