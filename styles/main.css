@@ -20,37 +20,53 @@ a:hover {
 
 /********************* Layout ******************/
 
-#header {
-    height: 150px;
+@media (min-width: 1040px) {
+    #header {
+        height: 150px;
+    }
+
+    #container {
+        margin: 0 auto;
+        max-width: 980px;
+        height: calc(100% - 260px);
+    }
+
+    #container:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    #snb, #main-content, #aside {
+        float: left;
+        height: 100%;
+    }
+
+    #snb, #aside {
+        width: 180px;
+    }
+
+    #main-content {
+        width: calc(100% - 360px);
+    }
+
+    #footer {
+        height: 110px;
+    }
 }
 
-#container {
-    margin: 0 auto;
-    max-width: 980px;
-    height: calc(100% - 260px);
-}
+@media (min-width: 768px) and (max-width: 1039px) {
+    #snb .menu:after {
 
-#container:after {
-    content: '';
-    display: block;
-    clear: both;
-}
+    }
 
-#snb, #main-content, #aside {
-    float: left;
-    height: 100%;
-}
+    #snb .menu {
 
-#snb, #aside {
-    width: 180px;
-}
+    }
 
-#main-content {
-    width: calc(100% - 360px);
-}
+    #snb .menu .snb-list {
 
-#footer {
-    height: 110px;
+    }
 }
 
 /**********************************************/
