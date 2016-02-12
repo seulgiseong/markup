@@ -64,6 +64,7 @@ a:hover {
 
     #snb .menu {
         height: 280px;
+        padding: 0 20px;
     }
 
     #snb .menu .snb-list {
